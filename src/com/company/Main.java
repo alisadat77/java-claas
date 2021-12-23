@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -57,7 +59,9 @@ public class Main {
 //            default:
 //                System.out.println("pashmam");
 //        }
-        int dayOfWeek = 5;
+        Scanner scanner = new Scanner(System.in);
+        String dayOfWeek_String = scanner.nextLine();
+        int dayOfWeek = Integer.parseInt(dayOfWeek_String);
             if (dayOfWeek == 1)
                 System.out.println("Satuarday");
             else if (dayOfWeek == 2)
